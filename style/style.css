@@ -1,39 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: arial,sans-serif;
-}
-
 body {
     background-color: #7ba3a3a9;
 }
 
-#info {
-    margin: 10% auto;
+main {
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 800px;
-    height: 369px;
+    margin: auto;
 }
 
-#info h1 {
+main h1 {
     text-align: center;
     font-size: 3.5em;
 }
 
-#info p {
-    padding-top: 20px;
+main p {
     font-size: 1.5em;
     text-align: center;
 }
 
 footer {
-    color: #ffffff;
-    background-color: #464444;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
     text-align: center;
+    font-size: 1.2em;
     padding: 11px;
 }
 
 footer a {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     text-decoration: none;
 }
