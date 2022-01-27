@@ -4,25 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>Gerador de desconto</title>
+    <title>Calculador de descontos</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
 
     <main>
-      <h1>Calculador de descontos</h1>
-      <p>Para calcular novamente, basta recarregar a página</p>
-    </main>
-    <footer>
-      <p>
-        &copyCriado por
-        <a href="https://github.com/hiagosilvaanjos" target="_blank"
-          >Hiago Silva</a
-        >
-      </p>
-    </footer>
-    
-    <script src="./javascript/script.js"></script>
 
+      <div class="cabecalho">
+        <h1>Calculador de descontos</h1>
+        <p>Digite o valor do produto e o valor de seu desconto</p>
+      </div>
+
+      <div class="valores">
+        <label for="valor">Digite o valor&#x1F447</label>
+        <input type="text" id="valor" placeholder="Valor do produto R$"> 
+        <label for="porcentagem">Digite o desconto&#x1F447</label>
+        <input type="text" id="porcentagem" placeholder="Valor do desconto %">
+        <button id="calcDesc">
+          Calcular &#x1F4B0
+        </button>
+      </div>
+
+      <div id="campoResultado">
+        <p id="resultDesc"></p>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>Feito por <a href="https://github.com/hiagosilvaanjos/" target="_blank">Hiago Silva</a></p>
+    </footer>
+
+    <script src="./javascript/scripts.js"></script>
   </body>
 </html>
