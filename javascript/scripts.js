@@ -2,7 +2,6 @@ let produto = document.getElementById('valor'); // Valor input
 let desconto = document.getElementById('porcentagem'); // Valor input
 let mensagemProduto = document.getElementById('sintaxePreco'); // Mensagem de erro
 let mensagemDesconto = document.getElementById('sintaxeDesc'); // Mensagem de erro
-let mensagem = document.getElementById('notInfo'); // Mensagem de erro
 let campo = document.getElementById('campoResultado'); // Div que aparece
 let resultado = document.getElementById('resultDesc'); // Resultado
 
