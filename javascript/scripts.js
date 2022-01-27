@@ -1,29 +1,52 @@
-let valorProduto = document.getElementById('valor');
-let descProduto = document.getElementById('porcentagem');
-let resultado = document.getElementById('resultDesc');
-let campo = document.getElementById('campoResultado');
+let produto = document.getElementById('valor'); // Valor input
+let desconto = document.getElementById('porcentagem'); // Valor input
+let mensagemProduto = document.getElementById('sintaxePreco'); // Mensagem de erro
+let mensagemDesconto = document.getElementById('sintaxeDesc'); // Mensagem de erro
+let mensagem = document.getElementById('notInfo'); // Mensagem de erro
+let campo = document.getElementById('campoResultado'); // Div que aparece
+let resultado = document.getElementById('resultDesc'); // Resultado
 
 
 let calcular = document.getElementById('calcDesc');
-calcular.addEventListener('click', desconto);
+calcular.addEventListener('click', calcularResult);
 
-function desconto() {
+function calcularResult() {
 
-    
-    campo.style.display = 'block'
+    let valorProduto = parseFloat(produto.value.replace(',', '.')); // Vai passar para Número quebrado
+    let descProduto = parseInt(desconto.value); // Vai passar para Número inteiro
 
-    let calcDesc = (descProduto.value / 100);
-    let calcular = valorProduto.value * calcDesc;
-    let saberDesc = valorProduto.value - calcular;
+    // Condicionais
 
+    if (valorProduto != Number(valorProduto)) {
+        return (mensagemProduto.style.display = 'inline-block',
+            campo.style.display = 'none'
+        )
 
+    } else if (descProduto != Number(descProduto)) {
+        return (mensagemDesconto.style.display = 'inline-block',
+            campo.style.display = 'none'
+        )
+    } else {
+        seuDesc()
+    }
 
-    return resultado.innerText = "Seu desconto é de R$" +
-        calcular.toFixed(2) + "💸" +
-        ".\nCom o desconto aplicado de " + (calcDesc * 100).toFixed(0) + "%" + " o valor que é R$" +
-        valorProduto.value +
-        " passará a ser R$" +
-        saberDesc.toFixed(2) + "."
+    function seuDesc() {
 
+        campo.style.display = 'block'
+
+        mensagemProduto.style.display = 'none';
+        mensagemDesconto.style.display = 'none';
+
+        let calcDesc = descProduto / 100;
+        let calcularPor = valorProduto * calcDesc;
+        let saberDesc = valorProduto - calcularPor;
+
+        return resultado.innerText = "Seu desconto é de R$" +
+            calcularPor.toFixed(2) + "💸" +
+            "\nCom o desconto aplicado de " + (calcDesc * 100).toFixed(0) + "%" + " o valor que é R$" +
+            valorProduto +
+            " passará a ser R$" +
+            saberDesc.toFixed(2);
+    }
 
 }
