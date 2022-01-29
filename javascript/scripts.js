@@ -9,24 +9,42 @@ let resultado = document.getElementById('resultDesc'); // Resultado
 let calcular = document.getElementById('calcDesc');
 calcular.addEventListener('click', calcularResult);
 
+
+
 function calcularResult() {
 
-    let valorProduto = parseFloat(produto.value.replace(',', '.')); // Vai passar para Número quebrado
-    let descProduto = parseInt(desconto.value); // Vai passar para Número inteiro
+    let valorProduto = produto.value; 
+    let descProduto = desconto.value; 
 
     // Condicionais
 
-    if (valorProduto != Number(valorProduto)) {
+    if (valorProduto == 0) {
+
         return (mensagemProduto.style.display = 'inline-block',
-            campo.style.display = 'none'
+            campo.style.display = 'none',
+            mensagemDesconto.style.display = 'none'
         )
 
-    } else if (descProduto != Number(descProduto)) {
+    } else if (descProduto == 0) {
+
         return (mensagemDesconto.style.display = 'inline-block',
-            campo.style.display = 'none'
+            campo.style.display = 'none',
+            mensagemProduto.style.display = 'none'
         )
-    } else {
+
+    }  else if (descProduto > 100 || descProduto < 0) {
+
+        return (
+            mensagemDesconto.style.display = 'inline-block',
+            mensagemDesconto.innerText = "Essa porcentagem não existe",
+            campo.style.display = 'none'
+            )
+    }
+
+    else {
+
         seuDesc()
+
     }
 
     function seuDesc() {

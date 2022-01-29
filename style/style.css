@@ -49,17 +49,16 @@ main {
 }
 
 .valores label {
+    color: #000000;
     display: block;
     font-weight: bold;
     font-size: 1.2em;
 }
 
 .valores input {
-    background-color: rgb(61, 61, 54);
+    background-color: rgb(42, 69, 82);
     color: white;
     font-weight: bold;
-    /* margin-top: 20px; */
-    /* margin-right: 10px; */
     border-radius: 2px;
     border: none;
     max-width: 100%;
@@ -67,9 +66,8 @@ main {
     display: block;
     margin: 10px auto;
 }
-
 .valores input:focus {
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(33, 48, 58);
 }
 
 .valores button {
@@ -79,36 +77,40 @@ main {
     margin: auto;
     display: block;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-weight: bold;
     font-size: 1.1em;
     color: white;
-    background-color: rgb(36, 65, 65);
+    background-color: #2b3f57;
     border-radius: 2px;
-    border: 1px solid black;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none; margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
 .valores button:hover {
-    background-color: rgb(3, 100, 100);
-    border: 1px solid rgb(255, 255, 255);
+    color: #050220;
+    background-color: #036464;
 }
 
 /* Regras javascript */
 
-#notInfo {
-    font-style: italic;
-    color: red;
-}
+
 
 #sintaxePreco {
-    padding: 5px;
+    padding-top:10px;
     font-style: italic;
     color: red;
     display: none;
 }
 
 #sintaxeDesc {
-    padding: 5px;
+    padding-top: 10px;
     font-style: italic;
     color: red;
     display: none;
@@ -120,7 +122,7 @@ main {
 
 #campoResultado {
     display: none;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(47, 53, 87);
     text-align: center;
     font-weight: 400;
     font-size: 1.2em;
@@ -149,4 +151,11 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+img {
+    position: relative;
+    top: 5px;
+    left: 25%;
 }
