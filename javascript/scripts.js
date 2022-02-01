@@ -60,7 +60,7 @@ function calcularResult() {
 
         return resultado.innerText = "Seu desconto é de R$" +
             calcularPor.toFixed(2) + "💸" +
-            "\nCom o desconto aplicado de " + (calcDesc * 100).toFixed(0) + "%" + " o valor que é R$" +
+            "\nCom o desconto de " + (calcDesc * 100).toFixed(0) + "%" + " aplicado, o valor que é R$" +
             valorProduto +
             " passará a ser R$" +
             saberDesc.toFixed(2);
