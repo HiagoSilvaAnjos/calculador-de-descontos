@@ -1,2 +1,7 @@
-# calculador-de-descontos
- Criei um sistema simples onde o usuário consegue saber o valor de um tal produto com um tal desconto aplicado
+<h1 style="font-size: 2.5em" align=center><a href="https://hiagosilvaanjos.github.io/calculador-de-descontos/" target="_blank">Calculador de Descontos🔗</a></h1>
+<p align=center>Esse projeto...</p>
+
+<div align=center style="font-weight: bold">
+<a href="">Sobre</a> -
+<a href="">Tecnologias</a>
+</div>
