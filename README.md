@@ -2,18 +2,40 @@
 <p align=center>Esse projeto...</p>
 
 <div align=center style="font-weight: bold">
-<a href="">Sobre</a> -
-<a href="">Tecnologias</a>
+<a href="#Sobre">Sobre</a> -
+<a href="#Tecnologias">Tecnologias</a>
 </div>
+
+<br>
+<br>
 
 <div align=center>
 
-![Calculador de descontos](https://user-images.githubusercontent.com/91165415/152702323-4cae329c-e150-4e44-b12b-e66f2ced7a36.gif)
-
-<div style="width: 80%">
-
-![Captura de Tela (2)](https://user-images.githubusercontent.com/91165415/152702329-0de9c1bf-e87c-46e0-8885-95c1d306cce8.png)
+![Calculador de descontos (1)](https://user-images.githubusercontent.com/91165415/152702542-686551ef-025d-40eb-a665-738b2d6df84b.gif)
 
 </div>
 
-</div>![Calculador de descontos (1)](https://user-images.githubusercontent.com/91165415/152702542-686551ef-025d-40eb-a665-738b2d6df84b.gif)
+<br>
+<br>
+
+<div>
+
+<h1 id="Sobre">Sobre</h1>
+<p>
+Primeiro projeto feito com JavaScript. <br>
+Uma calculadora que calcula o valor de um tal produto com um tal desconto aplicado. Ao calcular mostrarar o valor do desconto e o valor total do produto com esse desconto aplicado. <br>
+Veja este projeto <a href="http://hiagosilvaanjos.github.io/calculador-de-descontos/" target="_blank">clicando aqui</a>
+<p>
+</div>
+
+<br>
+<br>
+
+<h1 id="Tecnologias">Tecnologias</h1>
+
+- [x] HTML
+- [x] CSS
+- [x] JavaScript
+
+
+</div>
