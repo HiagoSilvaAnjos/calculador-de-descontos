@@ -16,4 +16,4 @@
 
 </div>
 
-</div>
+</div>![Calculador de descontos (1)](https://user-images.githubusercontent.com/91165415/152702542-686551ef-025d-40eb-a665-738b2d6df84b.gif)
