@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Calculador de descontos</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="./assets/Meuicone.ico" type="image/x-icon">
-  </head>
-  <body>
 
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculador de descontos</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="./assets/Meuicone.ico" type="image/x-icon">
+</head>
 
-      <div class="cabecalho">
-        <h1>Calculador de descontos</h1>
-        <p>Digite o valor do produto e o valor de seu desconto</p>
-      </div>
+<body>
 
-      <div class="valores">
-        <label for="valor">Digite o valor</label>
-        <span id="sintaxePreco">
-          * Preencha este campo! 👇 *
+  <main>
+
+    <div class="cabecalho">
+      <h1>Calculador de descontos</h1>
+      <p>Digite o valor do produto e o valor de seu desconto</p>
+    </div>
+
+    <div class="valores">
+      <label for="valor">Digite o valor</label>
+      <span id="sintaxePreco">
+        * Preencha este campo! 👇 *
       </span>
-        <input type="number" id="valor" placeholder="Valor do produto R$"> 
-        
-        <label for="porcentagem">Digite o desconto</label>
-        <span id="sintaxeDesc">
-          * Preencha este campo! 👇 *
-        </span>
-        <input type="number" id="porcentagem" placeholder="Valor do desconto %">
-   
-          <button id="calcDesc">
-             Calcular
-          </button>
-       
-      </div>
+      <input type="number" id="valor" placeholder="Valor do produto R$">
 
-      <div id="campoResultado">
-        <p id="resultDesc"></p>
-      </div>
+      <label for="porcentagem">Digite o desconto</label>
+      <span id="sintaxeDesc">
+        * Preencha este campo! 👇 *
+      </span>
+      <input type="number" id="porcentagem" placeholder="Valor do desconto %">
 
-    </main>
+      <button id="calcDesc">
+        Calcular
+      </button>
 
-    <footer>
-      <p>Feito por <a href="https://github.com/hiagosilvaanjos/" target="_blank">Hiago Silva</a></p>
-    </footer>
+    </div>
 
-    <script src="./javascript/scripts.js"></script>
-  </body>
+    <div id="campoResultado">
+      <p id="resultDesc"></p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Feito por <a href="https://github.com/hiagosilvaanjos/" target="_blank">Hiago Silva</a></p>
+  </footer>
+
+  <script src="./javascript/scripts.js"></script>
+</body>
+
 </html>
